@@ -6,6 +6,8 @@ This Docker contains:
 * ruby 2.5.x
 * npm and yarn latest
 * Google Chrome latest
+* codeceptjs latest
+* protractor 5.3.1
 
 # Usage
 

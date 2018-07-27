@@ -7,7 +7,9 @@ RUN set -x \
     && apt-get install -y \
         curl \
         wget \
-        gnupg
+        gnupg \
+        openssh-client \
+        git
 
 # Install node 8
 RUN set -x \
@@ -37,6 +39,10 @@ RUN set -x \
 
 # Install haml
 RUN gem install haml
+
+# Install codeceptjs and webdrivers
+RUN npm install -g codeceptjs protractor@5.3.1
+RUN webdriver-manager update
 
 # RUN node -v
 # RUN npm -v
